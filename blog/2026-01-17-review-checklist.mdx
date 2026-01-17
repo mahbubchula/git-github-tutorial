@@ -1,0 +1,41 @@
+---
+slug: review-checklist
+title: A Lightweight Code Review Checklist for Student Teams
+authors: [mahbub]
+tags: [workflow, reviews]
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+Everyone wants fast approvals, but reviewers need structure. Here is the checklist I expect before opening a pull request (PR).
+
+{/* truncate */}
+
+## Pre-flight
+
+- Run `npm test` or your project''s default test command.
+- Format files (`npm run lint`, `black`, `gofmt`, etc.).
+- Update docs (README, tutorials, diagrams) if behavior changed.
+
+## During review
+
+<Tabs>
+  <TabItem value="author" label="Author">
+    - Link related issues or research tasks.
+    - Highlight risky areas (`@ reviewers please focus on ...`).
+    - Attach screenshots/GIFs for UI work.
+  </TabItem>
+  <TabItem value="reviewer" label="Reviewer">
+    - Work in 400-line chunks.
+    - Quote the line you are commenting on so the author knows the context.
+    - When something is blocking, switch from *Comment* to *Request changes*.
+  </TabItem>
+</Tabs>
+
+## After merge
+
+- Delete the feature branch locally and remotely.
+- Note any follow-up tasks in GitHub Issues so they do not get lost.
+
+Happy shipping!

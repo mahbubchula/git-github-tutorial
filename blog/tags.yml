@@ -1,0 +1,12 @@
+release:
+  label: Release notes
+  permalink: /blog/tags/release
+workflow:
+  label: Workflow
+  permalink: /blog/tags/workflow
+reviews:
+  label: Reviews
+  permalink: /blog/tags/reviews
+tutorial:
+  label: Tutorial
+  permalink: /blog/tags/tutorial
