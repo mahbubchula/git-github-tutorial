@@ -1,12 +1,12 @@
 ---
 id: pages-automation
-title: Module 04 · GitHub Pages & Actions
+title: Module 04 - GitHub Pages and Actions
 sidebar_label: Pages & Actions
 ---
 
 ## Publish docs via GitHub Pages
 
-1. Go to **Settings ? Pages**.
+1. Go to **Settings -> Pages**.
 2. Choose *GitHub Actions* or *Deploy from branch (main)*.
 3. If using Actions, keep the `deploy.yml` workflow from this repo. It runs:
    ```yaml
@@ -37,9 +37,9 @@ jobs:
       - run: npm test --if-present
 ```
 
-## Secrets & environment tips
+## Secrets and environment tips
 
-- Store tokens in **Settings ? Secrets and variables ? Actions**.
+- Store tokens in **Settings -> Secrets and variables -> Actions**.
 - Use environment protections for production deploys so a maintainer must approve.
 - Avoid echoing secrets in logs (GitHub masks common patterns, but double-check).
 

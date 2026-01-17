@@ -1,6 +1,6 @@
 ---
 id: undo
-title: Module 02 · Undo Toolkit
+title: Module 02 - Undo Toolkit
 sidebar_label: Undo Toolkit
 ---
 
@@ -25,14 +25,14 @@ git restore --staged file.txt  # unstages but keeps edits
 git commit --amend -m "better message"
 ```
 
-Only amend when the commit is still local. If it''s already pushed, make a new commit instead.
+Only amend when the commit is still local. If it is already pushed, make a new commit instead.
 
 ## Revert vs reset
 
 | Command | Use when | Safe for shared history? |
 | --- | --- | --- |
-| `git revert <commit>` | Need to undo an older commit but keep history. | ? |
-| `git reset --hard <commit>` | Throw away local work in progress. | ?? only on branches nobody else uses |
+| `git revert <commit>` | Need to undo an older commit but keep history. | Yes |
+| `git reset --hard <commit>` | Throw away local work in progress. | Only on branches nobody else uses |
 
 ## Rescue plan flowchart
 
@@ -48,4 +48,4 @@ Only amend when the commit is still local. If it''s already pushed, make a new c
 - [ ] You can explain why `git revert` is safer than `git reset --hard` on shared branches.
 - [ ] You updated `COMMAND-LOG.md` with the undo experiment.
 
-Next: **Module 03 · Teamwork without drama**.
+Next: **Module 03 - Teamwork without drama**.

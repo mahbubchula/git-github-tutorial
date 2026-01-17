@@ -1,6 +1,6 @@
 ---
 id: branches
-title: Module 03 · Branch Smarts
+title: Module 03 - Branch Smarts
 sidebar_label: Branch Smarts
 ---
 

@@ -36,7 +36,7 @@ function HomepageHeader() {
           <div>
             <p className={styles.statLabel}>Modules</p>
             <p className={styles.statValue}>4</p>
-            <p className={styles.statNote}>Setup · Track · Teamwork · Deliver</p>
+            <p className={styles.statNote}>Setup | Track | Teamwork | Deliver</p>
           </div>
           <div>
             <p className={styles.statLabel}>Practice time</p>
@@ -46,7 +46,7 @@ function HomepageHeader() {
           <div>
             <p className={styles.statLabel}>Built by</p>
             <p className={styles.statValue}>Mahbub Hassan</p>
-            <p className={styles.statNote}>Graduate Student & Non ASEAN Scholar · Chulalongkorn University</p>
+            <p className={styles.statNote}>Graduate Student & Non ASEAN Scholar - Chulalongkorn University</p>
           </div>
         </div>
       </div>

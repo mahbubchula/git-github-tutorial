@@ -1,6 +1,6 @@
 ---
 id: releases
-title: Module 04 · Releases with Confidence
+title: Module 04 - Releases with Confidence
 sidebar_label: Releases
 ---
 
@@ -22,7 +22,7 @@ Tag format: `[major].[minor].[patch]`. Use:
 
 1. List commits since the last tag: `git log v1.0.0..HEAD --oneline`.
 2. Group them by Features, Fixes, Docs.
-3. Paste into GitHub ? **Releases ? Draft a new release**.
+3. Paste into GitHub -> **Releases -> Draft a new release**.
 4. Attach build artifacts (zip, pdf) if needed.
 
 ## Checklist before publishing

@@ -24,7 +24,7 @@ type Scenario = {
 const modules: Module[] = [
   {
     id: 'setup',
-    title: 'Module 01 · Setup Confidence',
+    title: 'Module 01 - Setup Confidence',
     summary: 'Install Git, configure your identity, and authenticate with GitHub.',
     minutes: 20,
     docLink: '/docs/start/quick-setup',
@@ -32,7 +32,7 @@ const modules: Module[] = [
   },
   {
     id: 'track',
-    title: 'Module 02 · Track Changes',
+    title: 'Module 02 - Track Changes',
     summary: 'Move safely between working tree, staging area, and history.',
     minutes: 25,
     docLink: '/docs/track/snapshots',
@@ -40,15 +40,15 @@ const modules: Module[] = [
   },
   {
     id: 'teamwork',
-    title: 'Module 03 · Teamwork',
+    title: 'Module 03 - Teamwork',
     summary: 'Create branches, open pull requests, and review politely.',
     minutes: 30,
     docLink: '/docs/teamwork/branches',
-    tasks: ['Create branch type/topic', 'Sync with main daily', 'Review with Observation ? Impact ? Suggestion'],
+    tasks: ['Create branch type/topic', 'Sync with main daily', 'Review with Observation -> Impact -> Suggestion'],
   },
   {
     id: 'deliver',
-    title: 'Module 04 · Deliver & Automate',
+    title: 'Module 04 - Deliver and Automate',
     summary: 'Tag releases, ship GitHub Pages, and run CI via GitHub Actions.',
     minutes: 20,
     docLink: '/docs/deliver/releases',
@@ -73,10 +73,10 @@ const scenarios: Scenario[] = [
   },
   {
     id: 'collab',
-    name: 'Publish a branch & PR',
+    name: 'Publish a branch and PR',
     steps: ['Sync with main', 'Push branch', 'Open pull request'],
     commands: ['git fetch origin && git rebase origin/main', 'git push -u origin feat/ui-cleanup', 'Open PR via GitHub UI'],
-    tip: 'Fill Context ? Changes ? Testing ? Screenshots before requesting review.',
+    tip: 'Fill Context -> Changes -> Testing -> Screenshots before requesting review.',
   },
 ];
 
@@ -101,7 +101,9 @@ function ModuleCard({module}: {module: Module}) {
       <div className={styles.moduleHeader}>
         <h3>{module.title}</h3>
         <p>{module.summary}</p>
-        <p className={styles.moduleMeta}>{module.minutes} min • <Link to={module.docLink}>Open module</Link></p>
+        <p className={styles.moduleMeta}>
+          {module.minutes} min | <Link to={module.docLink}>Open module</Link>
+        </p>
       </div>
       <div className={styles.progressBar}>
         <div style={{width: `${percent}%`}} aria-label={`Progress ${percent}%`} />
@@ -110,7 +112,7 @@ function ModuleCard({module}: {module: Module}) {
         {module.tasks.map((task, index) => (
           <li key={task}>
             <button type="button" onClick={() => toggleTask(index)} className={clsx(progress[index] && styles.taskDone)}>
-              {progress[index] ? '?' : '?'}
+              {progress[index] ? 'X' : 'O'}
             </button>
             <span>{task}</span>
           </li>
@@ -183,7 +185,7 @@ export default function HomepageFeatures(): ReactNode {
         <div className={styles.sectionIntro}>
           <p className={styles.sectionEyebrow}>Interactive learning path</p>
           <h2>Pick a module, tick the tasks, and practice commands instantly.</h2>
-          <p>Keep this page open while you work—each card links directly to the matching documentation and tracks your progress locally.</p>
+          <p>Keep this page open while you work - each card links directly to the matching documentation and tracks your progress locally.</p>
         </div>
         <div className={styles.moduleGrid}>
           {modules.map((module) => (

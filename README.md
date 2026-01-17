@@ -1,8 +1,8 @@
 # Git & GitHub Tutorial Studio
 
-Interactive Git learning hub built for **Mahbub Hassan** — Graduate Student & Non ASEAN Scholar, Department of Civil Engineering, Faculty of Engineering, Chulalongkorn University, Bangkok, Thailand.
+Interactive Git learning hub built for **Mahbub Hassan** - Graduate Student & Non ASEAN Scholar, Department of Civil Engineering, Faculty of Engineering, Chulalongkorn University, Bangkok, Thailand.
 
-## What''s inside
+## What's inside
 - Four-module learning path (Setup, Track, Teamwork, Deliver) with concise docs under `docs/`.
 - Responsive homepage with progress-tracking cards, command playground, and daily habit checklist.
 - Docusaurus 3 + TypeScript stack with GitHub Pages & Actions deployment workflow.
@@ -25,7 +25,7 @@ npm run serve  # optional preview of the build output
 ```
 
 ## Deployment
-GitHub Actions (`.github/workflows/deploy.yml`) builds on every push to `main` and publishes to GitHub Pages. Make sure **Settings ? Pages ? Source** is set to *GitHub Actions*.
+GitHub Actions (`.github/workflows/deploy.yml`) builds on every push to `main` and publishes to GitHub Pages. Make sure **Settings -> Pages -> Source** is set to *GitHub Actions*.
 
 Manual deploy (optional):
 ```bash

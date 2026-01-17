@@ -2,7 +2,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+// This runs in Node.js - Do not use client-side code here
 
 const config: Config = {
   title: 'Git & GitHub Studio',
@@ -106,13 +106,13 @@ const config: Config = {
           items: [
             {label: 'Blog', to: '/blog'},
             {
-              label: 'Civil Engineering · Chulalongkorn University',
+              label: 'Civil Engineering - Chulalongkorn University',
               href: 'https://www.ce.eng.chula.ac.th/en/',
             },
           ],
         },
       ],
-      copyright: `© ${new Date().getFullYear()} Mahbub Hassan · Department of Civil Engineering, Faculty of Engineering, Chulalongkorn University`,
+      copyright: `Copyright (c) ${new Date().getFullYear()} Mahbub Hassan - Department of Civil Engineering, Faculty of Engineering, Chulalongkorn University`,
     },
     prism: {
       theme: prismThemes.github,

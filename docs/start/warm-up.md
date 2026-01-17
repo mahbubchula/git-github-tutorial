@@ -1,6 +1,6 @@
 ---
 id: warm-up
-title: Module 01 · Practice Sandbox
+title: Module 01 - Practice Sandbox
 sidebar_label: Practice Sandbox
 ---
 
@@ -33,7 +33,7 @@ git commit -m "feat: add readme"
 Keep a Markdown file named `COMMAND-LOG.md`:
 
 ```
-## 2026-01-17 – Undo practice
+## 2026-01-17 - Undo practice
 - git status -sb
 - git add README.md
 - git commit -m "feat: add intro"
@@ -51,6 +51,6 @@ Writing what you ran helps future you debug faster.
 
 - [ ] `lab-git/.git/` exists and `git status` returns "On branch main".
 - [ ] `git log --oneline` shows at least two commits.
-- [ ] You updated `COMMAND-LOG.md` with today''s practice.
+- [ ] You updated `COMMAND-LOG.md` with today's practice.
 
-Head to **Module 02 · Track Changes Without Fear**.
+Head to **Module 02 - Track Changes Without Fear**.
