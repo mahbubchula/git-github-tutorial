@@ -1,44 +1,41 @@
 # Git & GitHub Tutorial Studio
 
-This repository hosts the Docusaurus site for Mahbub Hassan''s hands-on Git and GitHub curriculum. Students learn how to install Git, manage commits, collaborate with pull requests, and publish through GitHub Pages.
+Interactive Git learning hub built for **Mahbub Hassan** — Graduate Student & Non ASEAN Scholar, Department of Civil Engineering, Faculty of Engineering, Chulalongkorn University, Bangkok, Thailand.
 
-## Stack
-- [Docusaurus 3](https://docusaurus.io/) w/ TypeScript
-- Markdown-driven docs + MDX snippets
-- Node 20 + npm
+## What''s inside
+- Four-module learning path (Setup, Track, Teamwork, Deliver) with concise docs under `docs/`.
+- Responsive homepage with progress-tracking cards, command playground, and daily habit checklist.
+- Docusaurus 3 + TypeScript stack with GitHub Pages & Actions deployment workflow.
 
-## Local development
+## Requirements
+- Node.js 20+
+- npm 10+
 
+## Develop locally
 ```bash
-npm install          # installs dependencies
-npm start            # runs dev server at http://localhost:3000
+npm install
+npm start    # http://localhost:3000
+```
+Edits to `docs/`, `blog/`, or `src/` hot-reload automatically.
+
+## Production build
+```bash
+npm run build
+npm run serve  # optional preview of the build output
 ```
 
-The docs and blog reload live as you edit files under `docs/` or `blog/`.
+## Deployment
+GitHub Actions (`.github/workflows/deploy.yml`) builds on every push to `main` and publishes to GitHub Pages. Make sure **Settings ? Pages ? Source** is set to *GitHub Actions*.
 
-## Build & test
-
+Manual deploy (optional):
 ```bash
-npm run build        # compiles static site to build/
-npm run serve        # serves the production build locally
+GIT_USER=mahbubchula npm run deploy
 ```
-
-Run `npm run build` before committing to ensure Markdown/frontmatter is valid.
-
-## Deploy
-
-1. Push the `main` branch to `https://github.com/mahbubchula/git-github-tutorial`.
-2. Enable **Settings ? Pages** and select GitHub Actions ? `Deploy from a branch` (or run `npm run deploy`).
-3. GitHub publishes at `https://mahbubchula.github.io/git-github-tutorial/`.
 
 ## Customize
+- **Branding**: tweak colors or text in `docusaurus.config.ts`, `src/css/custom.css`, and `src/pages/index.tsx`.
+- **Interactive cards**: edit `src/components/HomepageFeatures/index.tsx` to change modules, scenarios, or checklist entries.
+- **Docs**: add/rename files inside `docs/` and update `sidebars.ts` for ordering.
+- **Posts**: add blog updates in `blog/` for new releases or class announcements.
 
-- Update global branding in `docusaurus.config.ts` (title, navbar, footer links).
-- Adjust hero copy/components in `src/pages/index.tsx` and `src/components/HomepageFeatures`.
-- Add more lessons inside `docs/` using the provided category folders.
-- Capture automation examples or updates in the `blog/` folder.
-
-## Branding
-> Mahbub Hassan · Graduate Student & Non ASEAN Scholar · Department of Civil Engineering, Faculty of Engineering, Chulalongkorn University, Bangkok, Thailand.
-
-Keep this credit visible in the hero, footer, and documentation intro.
+Keep the Mahbub Hassan credit visible across the hero, intro doc, and footer.

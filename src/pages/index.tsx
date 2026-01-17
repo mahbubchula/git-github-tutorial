@@ -17,16 +17,38 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">
-          Practical Git & GitHub habits for students, researchers, and project teams.
+          Interactive lessons that show every Git & GitHub move in plain language.
         </p>
+        <div className={styles.heroChips}>
+          <span className={styles.chip}>Step-by-step demos</span>
+          <span className={styles.chip}>Mahbub Hassan branding</span>
+          <span className={styles.chip}>Practice checklists</span>
+        </div>
         <div className={styles.buttons}>
           <Link className="button button--secondary button--lg" to="/docs/intro">
-            Start the guided tutorial
+            View learning path
+          </Link>
+          <Link className="button button--outline button--lg" to="https://github.com/mahbubchula/git-github-tutorial">
+            GitHub repo
           </Link>
         </div>
-        <p className={styles.heroBadge}>
-          Designed by Mahbub Hassan · Graduate Student & Non ASEAN Scholar · Civil Engineering, Chulalongkorn University
-        </p>
+        <div className={styles.heroStats}>
+          <div>
+            <p className={styles.statLabel}>Modules</p>
+            <p className={styles.statValue}>4</p>
+            <p className={styles.statNote}>Setup · Track · Teamwork · Deliver</p>
+          </div>
+          <div>
+            <p className={styles.statLabel}>Practice time</p>
+            <p className={styles.statValue}>20 min / day</p>
+            <p className={styles.statNote}>Short labs with copy-ready commands</p>
+          </div>
+          <div>
+            <p className={styles.statLabel}>Built by</p>
+            <p className={styles.statValue}>Mahbub Hassan</p>
+            <p className={styles.statNote}>Graduate Student & Non ASEAN Scholar · Chulalongkorn University</p>
+          </div>
+        </div>
       </div>
     </header>
   );
@@ -37,7 +59,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`Home | ${siteConfig.title}`}
-      description="Learn Git and GitHub with Mahbub Hassan via step-by-step tasks, diagrams, and checklists.">
+      description="Easy Git & GitHub tutorial for students with interactive cards, tasks, and checklists.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

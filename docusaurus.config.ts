@@ -85,7 +85,7 @@ const config: Config = {
           title: 'Tutorial',
           items: [
             {label: 'Start here', to: '/docs/intro'},
-            {label: 'Git Foundations', to: '/docs/category/01--git-foundations'},
+            {label: 'Setup Confidence', to: '/docs/start/quick-setup'},
           ],
         },
         {

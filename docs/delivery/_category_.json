@@ -1,9 +1,0 @@
-{
-  "label": "03 · Delivery & Automation",
-  "position": 3,
-  "link": {
-    "type": "generated-index",
-    "title": "Delivery & Automation",
-    "description": "Ship releases confidently, publish GitHub Pages sites, and add lightweight CI with Actions."
-  }
-}
